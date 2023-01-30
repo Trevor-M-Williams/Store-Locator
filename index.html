@@ -130,7 +130,8 @@
               });
 
             const location = locator.locations[resultIndex];
-            const name = location.title;
+            let name = location.title;
+            if (name.includes("&")) name = name.replace("&", "and");
             const address = location.address1 + " " + location.address2;
             const googleMapsUrl =
               "https://maps.google.com/maps?q=" + name + " " + address;

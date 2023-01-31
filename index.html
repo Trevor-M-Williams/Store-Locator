@@ -14,6 +14,8 @@
     <script>
       "use strict";
 
+      let infowindows = [];
+
       /**
        * Defines an instance of the Locator+ solution, to be instantiated
        * when the Maps library is loaded.
@@ -72,7 +74,7 @@
         };
 
         // Create a marker for each location.
-        const markers = locator.locations.map(function (location, index) {
+        let markers = locator.locations.map(function (location, index) {
           const marker = new google.maps.Marker({
             position: location.coords,
             map: locator.map,
@@ -80,7 +82,34 @@
             icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
           });
 
+          let name = location.title;
+          if (name.includes("&")) name = name.replace("&", "and");
+          const address = location.address1 + " " + location.address2;
+          let googleMapsUrl =
+            "https://maps.google.com/maps?q=" + name + " " + address;
+          googleMapsUrl = googleMapsUrl.replaceAll(" ", "+");
+
+          const contentString = `
+            <div class="info-window-content">
+              <div class="info-window-title">${location.title}</div>
+              <div class="info-window-address">${location.address1}</div>
+              <div class="info-window-address">${location.address2}</div>
+              <a href=${googleMapsUrl} class="info-window-link" target="_blank">View on Google Maps</a>
+            </div>
+            `;
+
+          const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+          });
+          infowindows.push(infowindow);
+
           marker.addListener("click", function () {
+            infowindows.forEach((window) => window.close());
+            infowindow.open({
+              shouldFocus: false,
+              anchor: marker,
+              map: locator.map,
+            });
             selectResultItem(index, true, true);
           });
           return marker;
@@ -114,6 +143,14 @@
 
             const resultSelectionHandler = function () {
               if (resultIndex !== locator.selectedLocationIdx) {
+                infowindows.forEach((window) => window.close());
+                console.log(infowindows[resultIndex]);
+                console.log(markers[resultIndex]);
+                infowindows[resultIndex].open({
+                  shouldFocus: false,
+                  anchor: markers[resultIndex],
+                  map: locator.map,
+                });
                 selectResultItem(resultIndex, true, false);
               }
             };
@@ -177,6 +214,32 @@
           });
           locator.map.panTo(locator.searchLocation.location);
           locator.map.setZoom(14);
+
+          const contentString = `
+            <div class="info-window-content">
+              <div class="info-window-title">Your Location</div>
+            </div>
+            `;
+
+          const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+          });
+          infowindows.push(infowindow);
+
+          handleInfoWindows();
+
+          locator.searchLocationMarker.addListener("click", () => {
+            handleInfoWindows();
+          });
+
+          function handleInfoWindows() {
+            infowindows.forEach((window) => window.close());
+            infowindow.open({
+              shouldFocus: false,
+              anchor: locator.searchLocationMarker,
+              map: locator.map,
+            });
+          }
 
           // Update the locator's idea of the user's country, used for units. Use
           // `formatted_address` instead of the more structured `address_components`
@@ -260,16 +323,10 @@
 
       /** Initialize Distance Matrix for the locator. */
       function initializeDistanceMatrix(locator) {
-        const distanceMatrixService = new google.maps.DistanceMatrixService();
-
         // Annotate travel times to the selected location using Distance Matrix.
         locator.updateTravelTimes = function () {
           if (!locator.searchLocation) return;
 
-          const units =
-            locator.userCountry === "USA"
-              ? google.maps.UnitSystem.IMPERIAL
-              : google.maps.UnitSystem.METRIC;
           const origin = locator.searchLocation.location;
 
           for (let i = 0; i < locator.locations.length; i++) {
@@ -278,7 +335,6 @@
             const lng1 = origin.lng;
             const lat2 = location.coords.lat;
             const lng2 = location.coords.lng;
-
             const distance = calculateDistance(lat1, lng1, lat2, lng2);
             location.distance = distance;
             location.distanceText = Math.round(distance * 10) / 10 + " mi";

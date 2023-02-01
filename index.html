@@ -84,6 +84,7 @@
 
           let name = location.title;
           if (name.includes("&")) name = name.replace("&", "and");
+          if (name.includes("#")) name = name.replace("#", "");
           const address = location.address1 + " " + location.address2;
           let googleMapsUrl =
             "https://maps.google.com/maps?q=" + name + " " + address;

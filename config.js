@@ -55,12 +55,6 @@ const CONFIGURATION = {
       coords: { lat: 33.4558787, lng: -117.6564912 },
     },
     {
-      title: "Brigantine Restaurants Corporation",
-      address1: "7889 Ostrow St",
-      address2: "San Diego, CA",
-      coords: { lat: 32.8132666, lng: -117.1553119 },
-    },
-    {
       title: "Bullpen",
       address1: "8199 Clairemont Mesa Blvd",
       address2: "San Diego, CA",
@@ -97,16 +91,22 @@ const CONFIGURATION = {
       coords: { lat: 33.91873534612352, lng: -117.90046263133333 },
     },
     {
+      title: "Champs Liquor #3",
+      address1: "9414 Telegraph Rd",
+      address2: "Downey, CA",
+      coords: { lat: 33.95618622683681, lng: -118.1024973846596 },
+    },
+    {
       title: "Chris' Liquor & Deli",
       address1: "2275 Sunset Cliffs Blvd",
       address2: "San Diego, CA",
       coords: { lat: 32.7507597, lng: -117.2421321 },
     },
     {
-      title: "Cohn Restaurant Group",
-      address1: "2225 Hancock St",
+      title: "Cove House",
+      address1: "8030 Girard Ave",
       address2: "San Diego, CA",
-      coords: { lat: 32.74644115884745, lng: -117.19295354894062 },
+      coords: { lat: 32.8492816809035, lng: -117.27477459204232 },
     },
     {
       title: "Crest Liquor",
@@ -169,6 +169,12 @@ const CONFIGURATION = {
       coords: { lat: 34.1565334, lng: -118.4867402 },
     },
     {
+      title: "En Fuego Cantina & Grill",
+      address1: "1342 Camino Del Mar",
+      address2: "San Diego, CA",
+      coords: { lat: 32.95900868274983, lng: -117.26559086874427 },
+    },
+    {
       title: "Encanto Restaurant",
       address1: "2121 Hillhurst Ave",
       address2: "Los Angeles, CA",
@@ -227,6 +233,12 @@ const CONFIGURATION = {
       address1: "2222 San Diego Ave",
       address2: "San Diego, CA",
       coords: { lat: 32.747922, lng: -117.1911227 },
+    },
+    {
+      title: "House of Liquor",
+      address1: "465 W. Broadway",
+      address2: "Glendale, CA",
+      coords: { lat: 34.147407316722116, lng: -118.26408326931923 },
     },
     {
       title: "Jensen’s Foods",
@@ -313,6 +325,12 @@ const CONFIGURATION = {
       coords: { lat: 33.4652342, lng: -117.7053098 },
     },
     {
+      title: "Major Market",
+      address1: "845 S Main Ave",
+      address2: "Fallbrook, CA",
+      coords: { lat: 33.37656440287675, lng: -117.2527188 },
+    },
+    {
       title: "Major Market Inc",
       address1: "1855 S Centre City Pkwy",
       address2: "San Diego, CA",
@@ -341,6 +359,12 @@ const CONFIGURATION = {
       address1: "2020 W Valley Blvd",
       address2: "Los Angeles, CA",
       coords: { lat: 34.0770238, lng: -118.1459974 },
+    },
+    {
+      title: "Miguel's Cocina",
+      address1: "2912 Shelter Island Dr",
+      address2: "San Diego, CA",
+      coords: { lat: 32.723143294707, lng: -117.2299645 },
     },
     {
       title: "Monarch Ocean Pub",
@@ -428,7 +452,7 @@ const CONFIGURATION = {
     },
     {
       title: "San Diego Mission Bay Resort",
-      address1: "1775 E Mission Bay Dr.",
+      address1: "1775 E Mission Bay Dr",
       address2: "San Diego, CA",
       coords: { lat: 32.7791722, lng: -117.2110678 },
     },
@@ -458,7 +482,7 @@ const CONFIGURATION = {
     },
     {
       title: "Tannins Restaurant & Wine Bar",
-      address1: "27211 Ortega Hwy.",
+      address1: "27211 Ortega Hwy",
       address2: "Orange County, CA",
       coords: { lat: 33.5044959, lng: -117.6538717 },
     },
@@ -473,6 +497,12 @@ const CONFIGURATION = {
       address1: "3909 Sunset Blvd",
       address2: "Los Angeles, CA",
       coords: { lat: 34.0922208, lng: -118.2796587 },
+    },
+    {
+      title: "The Cordova Bar",
+      address1: "1319 Morena Blvd",
+      address2: "San Diego, CA",
+      coords: { lat: 32.77234755541613, lng: -117.20195923136393 },
     },
     {
       title: "The Coyote Bar & Grill",
@@ -503,6 +533,12 @@ const CONFIGURATION = {
       address1: "2893 Mission Blvd",
       address2: "San Diego, CA",
       coords: { lat: 32.7655444, lng: -117.2510543 },
+    },
+    {
+      title: "The Regal Bar",
+      address1: "8344 La Mesa Blvd",
+      address2: "La Mesa, CA",
+      coords: { lat: 32.766129854516635, lng: -117.01819749999997 },
     },
     {
       title: "The Village Store",

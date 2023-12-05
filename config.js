@@ -680,11 +680,11 @@ const CONFIGURATION = {
     },
   ],
   mapOptions: {
-    center: { lat: 33.5, lng: -118.0 },
+    center: { lat: 32.5, lng: -108.0 },
     fullscreenControl: true,
     mapTypeControl: false,
     streetViewControl: false,
-    zoom: 8,
+    zoom: 5,
     zoomControl: true,
     maxZoom: 17,
     mapId: "",

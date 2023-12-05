@@ -145,8 +145,6 @@
             const resultSelectionHandler = function () {
               if (resultIndex !== locator.selectedLocationIdx) {
                 infowindows.forEach((window) => window.close());
-                console.log(infowindows[resultIndex]);
-                console.log(markers[resultIndex]);
                 infowindows[resultIndex].open({
                   shouldFocus: false,
                   anchor: markers[resultIndex],

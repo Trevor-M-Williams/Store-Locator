@@ -1,68 +1,80 @@
 [
   {
-    "title": "Depot Liquor",
-    "address1": "1001 Vine St",
-    "address2": "Brownwood, TX",
-    "coords": { "lat": 31.7150719, "lng": -98.9787542 }
+    "title": "Cache Creek Casino",
+    "address1": "14455 CA-16",
+    "address2": "Brooks, CA 95606",
+    "coords": { "lat": 38.7348656, "lng": -122.1419608 }
   },
   {
-    "title": "D and D Liquor Store",
-    "address1": "1507 W Front St",
-    "address2": "Goldthwaite, TX",
-    "coords": { "lat": 31.4556391, "lng": -98.5702774 }
+    "title": "Casa Orozco",
+    "address1": "7995 Amador Valley Blvd",
+    "address2": "Dublin, CA 94568",
+    "coords": { "lat": 37.7060508, "lng": -121.936245 }
   },
   {
-    "title": "FILO'S Liqours",
-    "address1": "4301 Rio Mesa Dr",
-    "address2": "Abilene, TX",
-    "coords": { "lat": 32.3636294, "lng": -99.7816369 }
+    "title": "Cielito Cocina",
+    "address1": "445 Railroad Ave",
+    "address2": "Danville, CA 94526",
+    "coords": { "lat": 37.8186567, "lng": -121.9969389 }
   },
   {
-    "title": "Hootin Holler Package",
-    "address1": "759 Gun Barrel Ln",
-    "address2": "Gun Barrel City, TX",
-    "coords": { "lat": 32.3144711, "lng": -96.1128195 }
+    "title": "El Nido",
+    "address1": "107 Town And Country Dr",
+    "address2": "Danville, California",
+    "coords": { "lat": 37.8142099, "lng": -121.9985233 }
   },
   {
-    "title": "Longhorn Wine & Spirits",
-    "address1": "2500 S Hwy 183 Suite 610",
-    "address2": "Austin, TX",
-    "coords": { "lat": 30.2115698, "lng": -97.68615299999999 }
+    "title": "Los Panchos",
+    "address1": "480 San Ramon Valley Blvd",
+    "address2": "Danville, CA 94526",
+    "coords": { "lat": 37.81883310000001, "lng": -121.9957396 }
   },
   {
-    "title": "Lone Star Spirits",
-    "address1": "3283 South 14th Street",
-    "address2": "2990 Pine St, TX",
-    "coords": { "lat": 31.9685988, "lng": -99.9018131 }
+    "title": "Luna Loca",
+    "address1": "500 Sycamore Valley Rd W",
+    "address2": "Danville, CA 94526",
+    "coords": { "lat": 37.8134748, "lng": -121.996739 }
   },
   {
-    "title": "On The Rocks Liquor",
-    "address1": "808 TX-16",
-    "address2": "San Saba, TX",
-    "coords": { "lat": 31.1771819, "lng": -98.7203942 }
+    "title": "Mikuni Sushi",
+    "address1": "1530 J St STE 150",
+    "address2": "Sacramento, CA 95814",
+    "coords": { "lat": 38.57776500000001, "lng": -121.4856464 }
   },
   {
-    "title": "Papi's Liquor",
-    "address1": "413 W 12th St",
-    "address2": "Monahans, TX",
-    "coords": { "lat": 31.5823793, "lng": -102.8930592 }
+    "title": "Piatti",
+    "address1": "571 Pavilions Ln",
+    "address2": "Sacramento, CA 95825",
+    "coords": { "lat": 38.5748093, "lng": -121.4095306 }
   },
   {
-    "title": "Total Wine & More",
-    "address1": "11066 Pecan Park Blvd Suite 117",
-    "address2": "Cedar Park, TX",
-    "coords": { "lat": 30.46985, "lng": -97.799194 }
+    "title": "Piatti",
+    "address1": "625 Redwood Hwy",
+    "address2": "Mill Valley, CA 94941",
+    "coords": { "lat": 37.8905477, "lng": -122.5177824 }
   },
   {
-    "title": "Total Wine & More",
-    "address1": "9350 N Central Expy",
-    "address2": "Dallas, TX",
-    "coords": { "lat": 32.8745338, "lng": -96.76830919999999 }
+    "title": "Piatti",
+    "address1": "100 Sycamore Valley Rd",
+    "address2": "Danville, CA 94526",
+    "coords": { "lat": 37.8116748, "lng": -121.9965835 }
   },
   {
-    "title": "Total Wine & More",
-    "address1": "5016 San Felipe St",
-    "address2": "Houston, TX",
-    "coords": { "lat": 29.7512355, "lng": -95.4623002 }
+    "title": "PlumpJack Wine & Spirits",
+    "address1": "4011 24th St",
+    "address2": "San Francisco, CA 94114",
+    "coords": { "lat": 37.7513179, "lng": -122.4322542 }
+  },
+  {
+    "title": "PlumpJack Wine & Spirits",
+    "address1": "3201 Fillmore St",
+    "address2": "San Francisco, CA 94123",
+    "coords": { "lat": 37.7990968, "lng": -122.4361294 }
+  },
+  {
+    "title": "The Cantina",
+    "address1": "651 E Blithedale Ave",
+    "address2": "Mill Valley, CA 94941",
+    "coords": { "lat": 37.9012041, "lng": -122.5276392 }
   }
 ]

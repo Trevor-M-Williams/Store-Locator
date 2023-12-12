@@ -11,10 +11,11 @@ async function handelData(data) {
   for (let i = 0; i < rows.length; i++) {
     try {
       let row = rows[i].split(",");
+
       let location = {
         title: row[0].trim(),
         address1: row[1].trim(),
-        address2: row[2].trim() + ", TX",
+        address2: row[2].trim() + ", " + row[3].trim(),
       };
 
       const res = await fetch(
@@ -28,9 +29,10 @@ async function handelData(data) {
       if (data.results[0]) {
         location.coords = data.results[0].geometry.location;
       } else {
-        location.coords = { lat: 39, lng: -104 };
+        location.coords = { error: "No location found" };
       }
-      if (!location.title.includes("?")) locations.push(location);
+
+      locations.push(location);
     } catch (err) {
       console.error(err);
     }

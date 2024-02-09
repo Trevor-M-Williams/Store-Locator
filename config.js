@@ -367,6 +367,30 @@ const CONFIGURATION = {
       coords: { lat: 32.723143294707, lng: -117.2299645 },
     },
     {
+      title: "Mission Wine & Spirits - Pasadena",
+      address1: "1785 E. Washington Blvd.",
+      address2: "Pasadena, CA 91104",
+      coords: { lat: 34.1693832, lng: -118.1136518 },
+    },
+    {
+      title: "Mission Wine & Spirits - Glendale",
+      address1: "825 W. Glenoaks Blvd.",
+      address2: "Glendale, CA 91202",
+      coords: { lat: 34.1608945, lng: -118.2739948 },
+    },
+    {
+      title: "Mission Wine & Spirits - South Glendale",
+      address1: "708 S. Glendale Ave.",
+      address2: "Glendale, CA 91205",
+      coords: { lat: 34.1386689, lng: -118.2506066 },
+    },
+    {
+      title: "Mission Wine & Spirits - Woodland Hills",
+      address1: "6307 Platt Ave.",
+      address2: "Woodland Hills, CA 91367",
+      coords: { lat: 34.1858869, lng: -118.6433 },
+    },
+    {
       title: "Monarch Ocean Pub",
       address1: "1555 Camino Del Mar Suite 322",
       address2: "San Diego, CA",
